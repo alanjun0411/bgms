@@ -8,7 +8,8 @@ export default {
     if (loginStatus) {
       this.$router.push('/home')
     } else {
-      this.$router.push('/login')
+      this.$router.push('/visualization')
+      // this.$router.push('/login')
     }
   }
 }

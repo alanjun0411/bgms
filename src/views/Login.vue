@@ -235,7 +235,7 @@ export default {
       this.emailTip = !status
     },
     regemailststus (status) {
-      this.regvccodeTip = !status
+      this.regEmailTip = !status
     },
     submit () {
       if (!this.username.trim()) {

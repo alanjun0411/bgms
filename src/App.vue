@@ -4,12 +4,12 @@
 <script>
 export default {
   mounted () {
-    const loginStatus = false
+    const loginStatus = true
     if (loginStatus) {
       this.$router.push('/home')
     } else {
-      this.$router.push('/visualization')
-      // this.$router.push('/login')
+      // this.$router.push('/visualization')
+      this.$router.push('/login')
     }
   }
 }

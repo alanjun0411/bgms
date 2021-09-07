@@ -3,6 +3,10 @@
     <div class="head">
       <div class="headTitle">无象限大数据共享交换平台</div>
       <div class="headtopbg"></div>
+      <div class="fanhui" @click="$router.back()">
+        <span class="iconfont icon-tuichu"></span>
+        <span>返回</span>
+      </div>
     </div>
     <div class="other">
       <div class="other_time">
@@ -295,6 +299,21 @@ export default {
     width: 100%;
     background-color: #0e1d38;
     border-bottom: 4px solid #126193;
+    &>.fanhui{
+      cursor: pointer;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translate(0, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .iconfont{
+        margin-right: 6px;
+        font-size: 20px;
+      }
+    }
     .headTitle{
       position: absolute;
       top: 68%;

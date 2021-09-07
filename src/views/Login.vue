@@ -238,6 +238,8 @@ export default {
       this.regEmailTip = !status
     },
     submit () {
+      this.$store.commit('loginIn')
+      this.$router.push('/home')
       if (!this.username.trim()) {
         this.usernameTip = true
         return
